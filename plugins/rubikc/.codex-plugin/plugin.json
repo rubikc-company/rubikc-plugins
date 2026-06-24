@@ -1,0 +1,33 @@
+{
+  "name": "rubikc",
+  "version": "0.2.0",
+  "description": "Manage Rubikc storefront content and analytics from Codex.",
+  "author": {
+    "name": "Rubikc",
+    "url": "https://rubikc.com"
+  },
+  "homepage": "https://rubikc.com",
+  "repository": "https://github.com/rubikc-company/rubikc-plugins",
+  "keywords": ["rubikc", "storefront", "content", "analytics", "commerce"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rubikc",
+    "shortDescription": "Manage Rubikc storefronts from Codex.",
+    "longDescription": "Inspect storefronts, analyze performance, and manage Rubikc content with authenticated MCP tools.",
+    "developerName": "Rubikc",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://rubikc.com",
+    "privacyPolicyURL": "https://rubikc.com/privacy",
+    "termsOfServiceURL": "https://rubikc.com/terms",
+    "defaultPrompt": [
+      "Show me my Rubikc storefronts.",
+      "Review my storefront performance.",
+      "Help me update storefront content."
+    ],
+    "brandColor": "#4CB7B9",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  },
+  "mcpServers": "./.mcp.json"
+}

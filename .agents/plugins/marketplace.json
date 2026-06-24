@@ -1,0 +1,20 @@
+{
+  "name": "rubikc",
+  "interface": {
+    "displayName": "Rubikc"
+  },
+  "plugins": [
+    {
+      "name": "rubikc",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rubikc"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

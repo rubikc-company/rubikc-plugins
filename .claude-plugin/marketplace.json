@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "rubikc",
+  "owner": {
+    "name": "Rubikc"
+  },
+  "description": "Official Rubikc plugins for Claude Code.",
+  "plugins": [
+    {
+      "name": "rubikc",
+      "source": "./plugins/rubikc",
+      "description": "Manage Rubikc storefront content and analytics.",
+      "category": "productivity",
+      "tags": ["commerce", "content", "analytics", "storefront"]
+    }
+  ]
+}

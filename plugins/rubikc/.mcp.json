@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rubikc": {
+      "type": "http",
+      "url": "https://api2.rubikc.com/mcp"
+    }
+  }
+}
