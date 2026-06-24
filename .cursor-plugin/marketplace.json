@@ -1,0 +1,17 @@
+{
+  "name": "rubikc",
+  "owner": {
+    "name": "Rubikc"
+  },
+  "metadata": {
+    "description": "Official Rubikc plugins for Cursor.",
+    "version": "0.3.0"
+  },
+  "plugins": [
+    {
+      "name": "rubikc",
+      "source": "./plugins/rubikc",
+      "description": "Manage Rubikc storefront content and analytics."
+    }
+  ]
+}

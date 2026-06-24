@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "rubikc": {
+      "url": "https://api2.rubikc.com/mcp"
+    }
+  }
+}

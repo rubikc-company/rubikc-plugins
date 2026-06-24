@@ -1,7 +1,35 @@
 # Rubikc AI plugins
 
-Rubikc tools and workflows for Codex and Claude Code. Both integrations use the
-authenticated MCP endpoint at `https://api2.rubikc.com/mcp`.
+Rubikc tools and workflows for Cursor, Codex, and Claude Code. All integrations
+use the authenticated MCP endpoint at `https://api2.rubikc.com/mcp`.
+
+## Cursor
+
+After the repository is listed in the Cursor Marketplace, install Rubikc from
+Cursor's Plugins settings. For private or team distribution, import this
+repository as a team marketplace. Authenticate the Rubikc MCP server when
+Cursor prompts you.
+
+Submit a public release at
+[cursor.com/marketplace/publish](https://cursor.com/marketplace/publish).
+
+For local development with Cursor Agent:
+
+```bash
+agent \
+  --plugin-dir /absolute/path/to/rubikc-plugins/plugins/rubikc \
+  --trust \
+  --approve-mcps
+```
+
+Test with:
+
+```text
+Use the Rubikc tools. Call getMcpStatus, then listStorefronts. Do not modify anything.
+```
+
+The plugin contains `mcp.json` for Cursor while sharing the same workflow skill
+and assets with the Codex and Claude Code integrations.
 
 ## Claude Code
 

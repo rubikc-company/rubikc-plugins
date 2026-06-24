@@ -1,16 +1,15 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "rubikc",
   "displayName": "Rubikc",
   "version": "0.3.0",
-  "description": "Manage Rubikc storefront content and analytics from Claude Code.",
+  "description": "Manage Rubikc storefront content and analytics from Cursor.",
   "author": {
-    "name": "Rubikc",
-    "url": "https://rubikc.com"
+    "name": "Rubikc"
   },
   "homepage": "https://rubikc.com",
   "repository": "https://github.com/rubikc-company/rubikc-plugins",
   "keywords": ["rubikc", "storefront", "content", "analytics", "commerce"],
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "category": "Productivity",
+  "logo": "assets/logo.png",
+  "skills": "./skills/"
 }
