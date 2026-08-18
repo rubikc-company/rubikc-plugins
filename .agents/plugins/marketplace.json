@@ -1,7 +1,7 @@
 {
   "name": "rubikc",
   "interface": {
-    "displayName": "Rubikc"
+    "displayName": "Official Rubikc plugins"
   },
   "plugins": [
     {

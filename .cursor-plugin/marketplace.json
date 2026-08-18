@@ -5,13 +5,16 @@
   },
   "metadata": {
     "description": "Official Rubikc plugins for Cursor.",
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   "plugins": [
     {
       "name": "rubikc",
       "source": "./plugins/rubikc",
-      "description": "Manage Rubikc storefront content and analytics."
+      "description": "Manage Rubikc storefront content and analytics.",
+      "logo": "plugins/rubikc/assets/logo.png",
+      "category": "Productivity",
+      "keywords": ["rubikc", "storefront", "content", "analytics", "commerce"]
     }
   ]
 }

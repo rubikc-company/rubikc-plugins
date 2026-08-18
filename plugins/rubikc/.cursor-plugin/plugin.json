@@ -1,7 +1,7 @@
 {
   "name": "rubikc",
   "displayName": "Rubikc",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Manage Rubikc storefront content and analytics from Cursor.",
   "author": {
     "name": "Rubikc"

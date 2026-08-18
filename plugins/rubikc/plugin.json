@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rubikc",
+  "version": "0.4.0",
+  "description": "Manage Rubikc storefront content and analytics.",
+  "author": {
+    "name": "Rubikc",
+    "url": "https://rubikc.com"
+  },
+  "homepage": "https://rubikc.com",
+  "repository": "https://github.com/rubikc-company/rubikc-plugins",
+  "license": "UNLICENSED",
+  "keywords": ["rubikc", "storefront", "content", "analytics", "commerce"]
+}

@@ -1,7 +1,7 @@
 # Rubikc
 
-Rubikc storefront tools and safe operating guidance for Cursor, Claude Code,
-and Codex.
+Rubikc storefront tools and safe operating guidance for Cursor, ChatGPT, Codex,
+Claude Code, and other Agent Plugins hosts.
 
 The plugin includes:
 
