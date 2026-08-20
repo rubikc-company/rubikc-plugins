@@ -1,0 +1,21 @@
+{
+  "name": "rubikc",
+  "owner": {
+    "name": "Rubikc"
+  },
+  "metadata": {
+    "description": "Official Rubikc plugins for GitHub Copilot.",
+    "version": "0.4.0"
+  },
+  "plugins": [
+    {
+      "name": "rubikc",
+      "source": "./plugins/rubikc",
+      "description": "Manage Rubikc storefront content and analytics.",
+      "license": "MIT",
+      "version": "0.4.0",
+      "category": "productivity",
+      "tags": ["commerce", "content", "analytics", "storefront"]
+    }
+  ]
+}
