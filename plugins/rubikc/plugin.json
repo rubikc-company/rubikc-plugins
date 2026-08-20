@@ -9,6 +9,6 @@
   },
   "homepage": "https://rubikc.com",
   "repository": "https://github.com/rubikc-company/rubikc-plugins",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": ["rubikc", "storefront", "content", "analytics", "commerce"]
 }
