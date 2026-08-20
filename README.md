@@ -20,6 +20,8 @@ After install and authentication:
 Use the Rubikc tools. Call getMcpStatus, then listStorefronts. Do not modify anything.
 ```
 
+Tested: this Cursor smoke test has been run successfully against the live MCP.
+
 ## Cursor
 
 After the repository is listed in the Cursor Marketplace, install Rubikc from
