@@ -1,6 +1,6 @@
 ---
 name: rubikc-build-space
-description: Bootstrap a Rubikc Space into a launch-ready storefront from the merchant's existing website or Shopify shop, or from source material such as a brand deck, catalog or documents. Use when the user wants to set up, onboard, build, migrate or "make my Space look like my site", or is running a Get started / Build with an AI agent step (shop URL, brand extraction, brand book, pages and content, build space with AI).
+description: Bootstrap a Rubikc Space into a launch-ready storefront from the merchant's existing website or Shopify shop, or from source material such as a brand deck, catalog or documents. Use when the user wants to set up, onboard, build, migrate or "make my Space look like my site", or wants their brand, playbook, cubes and menu created from what they already have.
 ---
 
 # Build a Space
@@ -15,31 +15,17 @@ Follow the `rubikc` skill for startup and safety rules.
 ## 1. Orient
 
 1. `getMcpStatus`, then `listStorefronts`, and pick the `storefrontId`.
-2. `getOnboardingProgress` and `getOnboardingContext`. Together they give the
-   checklist state, current settings, stored `sourceShopUrl`, playbook, import
-   counts and navigation summary.
+2. `getOnboardingContext`: current settings, appearance, stored shop URL,
+   playbook, import counts and navigation summary in one read.
 3. `instructions` topic `onboarding`, then `content` and `images`.
 4. Work in the Space's default language only (`getLocales`), unless the
    merchant asks for more.
 
-**Onboarding steps.** If the merchant started a step from Admin, or asked you
-to "do onboarding", record the work against it:
-
-- Call `startOnboardingStep` before writing.
-- Call `completeOnboardingStep` at the end, with a Markdown report.
-- If you cannot continue, call `setOnboardingStepStatus` with `blocked` or
-  `needs_input`.
-
-The step ids are `shop-url`, `brand-extract`, `brand-book`, `pages-content`
-and `build-storefront`. `build-storefront` is all of them in one run. Admin
-only advances when the step is completed through MCP, not when you say so in
-chat.
-
 ## 2. Gather the input
 
-**From a website.** Confirm the URL and store it with `setOnboardingShopUrl`.
-Read the homepage, header, footer, top collections, top products and key
-information pages with your own web tools. Collect:
+**From a website.** Confirm the URL with the user. Read the homepage, header,
+footer, top collections, top products and key information pages with your own
+web tools. Collect:
 
 - name, logo, dark logo, favicon, colors, fonts (Google Fonts URL or font files)
 - tone of voice
@@ -122,8 +108,7 @@ For each target, follow the `rubikc-create-content` workflow. In short:
 
 ## Report
 
-Write the report for the merchant. Use it as the `completeOnboardingStep`
-report and as your final message. It has these sections:
+End with a report for the merchant, in these sections:
 
 - **Brand**
 - **Playbook**

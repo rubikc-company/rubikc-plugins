@@ -15,7 +15,7 @@ Each skill is a merchant goal, not a tool area:
 | Skill | Goal |
 |---|---|
 | `rubikc` | Core operating guide: pick a Space, vocabulary, tool families, toolsets, safety rules. Routes to the others. |
-| `rubikc-build-space` | Bootstrap a launch-ready Space from an existing website, Shopify import, or source material. Follows the Admin onboarding steps. |
+| `rubikc-build-space` | Bootstrap a launch-ready Space from an existing website, Shopify import, or source material. |
 | `rubikc-create-content` | New cubes, campaigns, shared blocks, surveys and translations from a brief, files, product data or images. |
 | `rubikc-analyze` | Read-only: explain what is happening in a Space and recommend actions. |
 | `rubikc-optimize` | Audit content and performance, fix weak cubes as drafts, and A/B test Versions with traffic splits. |
