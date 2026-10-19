@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rubikc-company/rubikc",
+  "title": "Rubikc",
+  "description": "Connect Cursor and other agents to Rubikc Spaces: analytics and cubes, blocks, storefront content.",
+  "version": "0.4.0",
+  "repository": {
+    "url": "https://github.com/rubikc-company/rubikc-plugins",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api2.rubikc.com/mcp"
+    }
+  ]
+}
