@@ -11,7 +11,7 @@
       "source": "./plugins/rubikc",
       "description": "Manage Rubikc storefront content and analytics.",
       "license": "MIT",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "category": "productivity",
       "tags": ["commerce", "content", "analytics", "storefront"]
     }

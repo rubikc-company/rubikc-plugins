@@ -5,12 +5,31 @@ Agent Plugins hosts. All integrations use the authenticated MCP endpoint at
 `https://api2.rubikc.com/mcp`.
 
 The portable package is `plugins/rubikc/`: root `plugin.json` (Agent Plugins
-1.0.0), `mcp.json`, and `skills/rubikc-workflows`. Vendor overlays stay in
-`.cursor-plugin`, `.codex-plugin`, `.claude-plugin`, and `.mcp.json`.
+1.0.0), `mcp.json`, and `skills/`. Vendor overlays stay in `.cursor-plugin`,
+`.codex-plugin`, `.claude-plugin`, and `.mcp.json`.
 
-Keep `skills/rubikc-workflows/SKILL.md` as a thin operating layer. Domain
-playbooks live in the MCP `instructions` tool; do not duplicate them in the
-skill.
+## Skills
+
+Each skill is a merchant goal, not a tool area:
+
+| Skill | Goal |
+|---|---|
+| `rubikc` | Core operating guide: pick a Space, vocabulary, tool families, toolsets, safety rules. Routes to the others. |
+| `rubikc-build-space` | Bootstrap a launch-ready Space from an existing website, Shopify import, or source material. |
+| `rubikc-create-content` | New cubes, campaigns, shared blocks, surveys and translations from a brief, files, product data or images. |
+| `rubikc-analyze` | Read-only: explain what is happening in a Space and recommend actions. |
+| `rubikc-optimize` | Audit content and performance, fix weak cubes as drafts, and A/B test Versions with traffic splits. |
+
+Skills describe the workflow and the judgment calls. Domain rules (block
+schemas, metric definitions, Sources behaviour) live in the MCP `instructions`
+tool and `inspectBlockTypes`, which ship with the API. Point to them instead of
+copying them, so skills do not go stale when the MCP changes.
+
+When the MCP tool list changes, check every tool name the skills mention:
+
+```bash
+grep -ohE '`[a-z][A-Za-z]+`' plugins/rubikc/skills/*/SKILL.md | sort -u
+```
 
 ## Smoke test
 
@@ -91,8 +110,10 @@ claude --plugin-dir ./plugins/rubikc
 ```
 
 Restart Claude Code or run `/reload-plugins`, then open `/mcp` and authenticate
-the Rubikc server when prompted. The bundled workflow skill is available as
-`/rubikc:rubikc-workflows`.
+the Rubikc server when prompted. The skills are available as
+`/rubikc:rubikc`, `/rubikc:rubikc-build-space`, `/rubikc:rubikc-create-content`,
+`/rubikc:rubikc-analyze`, and `/rubikc:rubikc-optimize`, and also load
+automatically when a request matches.
 
 For local marketplace development:
 
